@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -15,11 +16,12 @@
 
 .nav-bar {
     display: flex;
-    background-color: #9475ff;
+    background-color: #05073e;
     justify-content: space-evenly;
     align-items: center;
-    position: relative;
-    width 
+    position: fixed;
+   z-index: 10;
+    width: 100vw;
     
 }
 
@@ -33,7 +35,7 @@
 }
 
 .li {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .li a {
@@ -42,7 +44,7 @@
 
 .li a:hover {
     color: #fdde55;
-
+    transform: scale(1.2);
 }
 
 .las {
@@ -50,6 +52,10 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
+}
+
+.choto{
+  font-size: 1rem;
 }
 
 button {
@@ -67,7 +73,7 @@ a {
 
 .hero {
     position: relative;
-    background-color: #02042a;
+    background-color: #05062d;
     color: white;
     font-size: 2rem;
     font-weight: 700;
@@ -75,7 +81,6 @@ a {
 }
 
 .box1{
-  position: ;
   display: flex;
   width:83%;
   margin: 0 auto;
@@ -86,6 +91,10 @@ a {
   background-color: transparent;
   padding: 20px;
   
+}
+
+.start{
+  padding: 0.8rem 2.3rem;
 }
 
 .space{
@@ -136,9 +145,13 @@ a {
 }
 
 .main{
-    
-    width: 83%;
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
     margin: 0 auto;
+    width: 83%;
+    justify-content: center;
+    align-items:center;
     
     
 }
@@ -151,6 +164,7 @@ a {
     margin: 3rem;
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
+    transition: 1.5s;
 }
 
 .left2{
@@ -161,7 +175,7 @@ a {
 }
 
 .edu{
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .btn1{ 
@@ -205,4 +219,30 @@ a {
 .last{
     width:102vw;
     transform: rotate(180deg);
+}
+
+.part1:hover{
+  transform: scale(1.2);
+}
+
+.why1{
+ background-color: #efa4a4;
+  color: #05062d;
+  font-size: larger;
+  
+}
+.why{
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.ans{
+  font-size: medium;
+  opacity:0.9 ;
+  width :83%;
+  margin: 0 auto;
+  line-height: 20px;
+  
 }
